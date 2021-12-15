@@ -28,7 +28,7 @@ def req_facepp(image):
     "return_attributes": attr
   }
 
-  r = grequests.post("https://api-us.faceplusplus.com/facepp/v3/detect", data=payload)
+  r = grequests.post("https://mixedrealitydevelopment-calebcram.github.io/FaceAPI/", data=payload)
   return r
 
 def req_omc(image):
