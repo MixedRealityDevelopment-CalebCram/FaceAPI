@@ -22,8 +22,8 @@ def req_facepp(image):
   attr="gender,age,smiling,emotion,headpose,facequality,blur,eyestatus,ethnicity,beauty,mouthstatus,skinstatus"
 
   payload = {
-    "api_key": config.cBs_tb4ofjXhOv6FCnVBPflfH8TKRXq5,
-    "api_secret": config.1PF-5sI7PgJNTDXCQhT3ZEFUXjTsIaqD,
+    "api_key": config.FACEPP_API_KEY,
+    "api_secret": config.FACEPP_API_SECRET,
     "image_base64": image,
     "return_attributes": attr
   }
