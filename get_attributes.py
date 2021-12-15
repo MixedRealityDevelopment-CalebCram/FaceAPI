@@ -22,13 +22,13 @@ def req_facepp(image):
   attr="gender,age,smiling,emotion,headpose,facequality,blur,eyestatus,ethnicity,beauty,mouthstatus,skinstatus"
 
   payload = {
-    "api_key": config.FACEPP_API_KEY,
-    "api_secret": config.FACEPP_API_SECRET,
+    "api_key": config.cBs_tb4ofjXhOv6FCnVBPflfH8TKRXq5,
+    "api_secret": config.1PF-5sI7PgJNTDXCQhT3ZEFUXjTsIaqD,
     "image_base64": image,
     "return_attributes": attr
   }
 
-  r = grequests.post("https://mixedrealitydevelopment-calebcram.github.io/FaceAPI/", data=payload)
+  r = grequests.post("https://api-us.faceplusplus.com/facepp/v3/detect", data=payload)
   return r
 
 def req_omc(image):
